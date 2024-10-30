@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>e-Portfolio on Opportunity Cost</i></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0; /* Grey background */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #00ffbf; /* Changed to solid blue */
+            color: white;
+            border: 2px solid #007bff; /* Border for header */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+            border: 1px solid #007bff; /* Border for nav */
+            padding: 10px;
+            text-align: center; /* Centered navigation */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #007bff; /* Border for sections */
+            display: none; /* Hide sections by default */
+        }
+
+        .active {
+            display: block; /* Show the active section */
+        }
+
+        .profile-image {
+            max-width: 150px;
+            border-radius: 0; /* Square shape */
+            float: left; /* Align left */
+            margin-right: 15px; /* Space next to text */
+        }
+
+        table {
+            width: 100%; /* Table fits page size */
+            border-collapse: collapse; /* Clear table */
+        }
+
+        th,
+        td {
+            border: 1px solid #007bff; /* Table cell border */
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff; /* Header color */
+            color: white; /* Header text color */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i>e-Portfolio on Opportunity Cost</i></h1>
+        
+    </header>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul id="menu">
+            <li><a href="#" onclick="showSection('About me')">1. About me</a></li>
+            <li><a href="#" onclick="showSection('Aim of the e-Portfolio')">2. Aim of the e-Portfolio</a></li>
+            <li><a href="#" onclick="showSection('lesson-structure')">3. Lesson Structure</a></li>
+            <li><a href="#" onclick="showSection('resources-materials')">4. Resources Materials</a></li>
+        </ul>
+    </nav>
+
+    <section id="About me">
+        <h2>1. About me</h2>
+        <p>I am Ndumiso Dlamini from Ngwane Park. a dedicated student teacher at the University of Eswatini, pursuing a Bachelor of Education in Commerce with a focus on economics and accounting. My passion for teaching stems from a desire to inspire learners to understand the fundamental concepts of economics, particularly opportunity cost. I believe that grasping this concept is crucial for making informed decisions in both personal and professional contexts.
+            Through engaging lessons and practical examples, I aim to equip my students with the skills they need to analyze choices and their consequences. I am committed to fostering a positive learning environment where students can explore and apply economic principles in real-world scenarios.
+            </p></section>
+
+    <section id="Aim of the e-Portfolio">
+        <h2>2. Aim of the e-Portfolio</h2>
+        <p>The aim of this e-portfolio is provide learners with better understanding on the concept of opportunity cost in economics   and create engaging, student-centered   an interactive and conducive environment where learners can explore to real world concepts.</p>
+    </section>
+
+    <section id="lesson-structure">
+        <h2>3. Lesson Structure</h2>
+        <p>This lesson consist of a lesson plan , lecture notes on opportunity cost , Syllabus that will guide you on owhat to focus on and and link of a lesson vedio which will help you easy understand the concept. </p>
+    </section>
+
+    <section id="resources-materials">
+        <h2>4. Resources Materials</h2>
+        <ul>
+            <li><a href="my learning resources/lessson plan.docx" target="_blank">retrieve the lesson plan</a></li>
+            <li><a href="my learning resources/notes on opp_cost.pptx" target="_blank">retrieve the notes</a></li>
+            <li><a href="my learning resources/Economics Syllabus 6899 (2021 - 2023).pdf" target="_blank">Download the Syllabus</a></li>
+            <li><a href="https://www.vdmateapp.com/?subpub=sharing" target="_blank">Watch Lesson Video</a></li>
+            <li><a href="http://sharevideo1.com/file/TndPWUxWLUw3cGM=?t=ytb&f=wh" target="_blank">Watch Lesson Video</a></li>
+            
+        </ul>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
